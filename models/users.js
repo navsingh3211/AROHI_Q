@@ -36,6 +36,12 @@ const _schema = new Schema(
       index: true,
       default: 'STUDENT'
     },
+    accessAreas:{
+      type: String,
+      enum: ['STARTER','ACCESS_OF_STUDENT_PENDING', 'ACCESS_OF_STUDENT_SUCCESS'],
+      index: true,
+      default: 'STARTER'
+    },
     status: {
       type: Boolean,
       default: true,

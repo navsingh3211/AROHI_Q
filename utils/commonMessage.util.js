@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
 /* eslint-disable prettier/prettier */
 const MESSAGES = {
+  USER_SIGNUP_COMPLETE:'User has been registered successfully!',
   USER_ALREADY_EXIT:'User already exited with given mobile no.',
+  NO_USER_FOUND:"No user found with given credentials",
   INVALID_TOKEN: 'Token Invalid!',
   DATA_FOUND: 'Data Found!',
   NO_DATA_FOUND: 'No Data Found!',
@@ -20,10 +22,6 @@ const MESSAGES = {
   EMAIL_ALREADY_EXISTS:
     'This email id is already associated with another user.',
   STUDENT_EMAIL_ALREADY_EXISTS: 'Student email already exist in our records !',
-  FATHER_EMAIL_ALREADY_EXISTS: 'Father email already exist in our records !',
-  MOTHER_EMAIL_ALREADY_EXISTS: 'Mother email already exist in our records !',
-  GUARDIAN_EMAIL_ALREADY_EXISTS:
-    'Guardian email already exist in our records !',
   NOT_EXISTS: 'Account does not exist in our records !',
   SOMETHING_WRONG: 'Something went wrong!',
   INVALID_EMAIL: 'You have entered an email is not exist in our records.',
@@ -86,7 +84,7 @@ const MESSAGES = {
   SOMETHING_WRONG: 'Something went wrong!',
   INVALID_PASSWORD:
     'You have entered a password that does not match your email.',
-  INVALID_CRED: 'You have entered an invalid email address or password!',
+  INVALID_CRED: 'You have entered an invalid mobile address or password!',
   INVALID_MAIL: 'You have entered an invalid email address!',
   INVALID_MOBILE: 'You have entered an invalid mobile no!',
   OTP_SENT: 'OTP has been sent to your registered email!',
