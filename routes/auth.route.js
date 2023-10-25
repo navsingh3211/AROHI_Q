@@ -2,10 +2,10 @@
 import express from 'express';
 
 import {
-  register
+  register,login,forgetPassword
 } from '../controllers/auth/register.js';
 import {
-  UserRegisterSchema
+  userRegisterSchema,userLoginSchema
 } from '../validators/user.validator.js';
 
 // import { userAuth } from '../middlewares/auth.middleware';
@@ -14,11 +14,11 @@ const router = express.Router();
 
 router.post(
   '/register',
-  [UserRegisterSchema],
+  [userRegisterSchema],
   register
 );
-// router.post('/update', inventoryCategoryUpdateSchema, editInventoryCategory);
-// router.get('/deleteCategory/:id', deleteInventoryCategory);
+router.post('/login', [userLoginSchema], login);
+router.post('/forget-password', forgetPassword);
 // router.get('/getCategoryList', getCategoryList);
 
 export default router;
